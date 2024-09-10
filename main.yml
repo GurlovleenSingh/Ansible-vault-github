@@ -1,5 +1,9 @@
 ---
--name: github clone hosts:all become:true
+-name: github clone 
+ hosts:all 
+ become:true
+ vars:
+  ansible_secret.yml
 tasks:
-  repo: git@github.com:GurlovleenSingh/Ansible-Vault.git
+  repo: https://username:{{password}}@github.com/GurlovleenSingh/Ansible-Vault.git
   dest: Ansible-vault-github/clone
