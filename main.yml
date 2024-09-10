@@ -1,0 +1,5 @@
+---
+-name: github clone hosts:all become:true
+tasks:
+  repo: git@github.com:GurlovleenSingh/Ansible-Vault.git
+  dest: Ansible-vault-github/clone
